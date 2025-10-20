@@ -51,6 +51,8 @@ jobs:
       run: choco install make
     - name: Perl version
       run: perl -V
+    - name: gcc version
+      run: gcc --version
     - name: Install dependencies
       run: cpanm -v --installdeps .
     - name: Build
