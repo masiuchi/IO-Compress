@@ -52,7 +52,7 @@ jobs:
     - name: Perl version
       run: perl -V
     - name: Install dependencies
-      run: cpanm --installdeps .
+      run: cpanm -v --installdeps .
     - name: Build
       run: perl Makefile.PL && make
     - name: Test
