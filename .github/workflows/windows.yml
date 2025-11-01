@@ -54,9 +54,9 @@ jobs:
     - name: gcc version
       run: gcc --version
     - name: perl path
-      run: Get-Command perl
+      run: Get-Command perl -All
     - name: gcc path
-      run: Get-Command gcc
+      run: Get-Command gcc -All
     - name: Install dependencies
       run: cpanm -v --installdeps .
     - name: Build
