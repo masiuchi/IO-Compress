@@ -53,6 +53,10 @@ jobs:
       run: perl -V
     - name: gcc version
       run: gcc --version
+    - name: perl path
+      run: where perl
+    - name: gcc path
+      run: where gcc
     - name: Install dependencies
       run: cpanm -v --installdeps .
     - name: Build
