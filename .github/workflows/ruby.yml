@@ -18,5 +18,7 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true
     
+    - run: where gcc -All
+    - run: where ruby -All
     - run: gcc --version
     - run: ruby -rrbconfig -e "puts RbConfig::CONFIG.sort.map {|k,v| sprintf('%-30s = %s', k, v)}"
