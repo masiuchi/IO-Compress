@@ -22,4 +22,4 @@ jobs:
     - run: which ruby
     - run: gcc --version
     - run: ruby -rrbconfig -e "puts RbConfig::CONFIG.sort.map {|k,v| sprintf('%-30s = %s', k, v)}"
-    - run: set
+    - run: "Get-ChildItem Env:"
