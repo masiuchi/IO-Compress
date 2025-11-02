@@ -58,7 +58,7 @@ jobs:
     - name: gcc path
       run: Get-Command gcc -All
     - name: environment variables
-      run: Get-ChildItem Env:
+      run: "Get-ChildItem Env:"
     - name: Install dependencies
       run: cpanm -v --installdeps .
     - name: Build
