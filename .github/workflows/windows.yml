@@ -53,6 +53,8 @@ jobs:
       run: perl -V
     - name: gcc version
       run: gcc --version
+    - name: gcc version (mingw)
+      run: C:\mingw64\bin\gcc.exe --version
     - name: perl path
       run: Get-Command perl -All
     - name: gcc path
