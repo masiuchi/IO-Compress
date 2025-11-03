@@ -20,9 +20,8 @@ task:
   name: MacOS
   osx_instance:
     matrix:
-      image: catalina-xcode-11.3.1
-      image: catalina-xcode-11.4.1
-      # image: catalina-xcode-11.5
+      image: ghcr.io/cirruslabs/macos-runner:sequoia
+      image: ghcr.io/cirruslabs/macos-runner:tahoe
   install_script:
     - perl -V
     - echo|sudo cpan App::cpanminus
